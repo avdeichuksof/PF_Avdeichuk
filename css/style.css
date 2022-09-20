@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* GLOBAL */
+@font-face{ 
+    font-family: "Gotu Regular"; 
+    src: url("../fonts/Gotu-Regular.ttf"); 
+}
+@font-face {
+    font-family: "Fraunces";
+    src: url(../fonts/Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
+
+body{
+    background-color: #FBFDED;
+    font-family: "Gotu Regular";
+}
+
+.grid-area{
+    display: grid;
+    height: 100vh;
+    grid-template-areas: 
+        "logo menu menu"
+        "cont cont cont"
+        "cont cont cont"
+        "pie pie pie";
+}
+header{
+    background-color:  #000f33;
+    grid-area: logo;
+}
+nav{
+    background-color: #000f33;
+    grid-area: menu;
+}
+main{
+    background-color: #FBFDED;
+    grid-area: cont;
+}
+footer{
+    background-color: #000f33;
+    grid-area: pie;
+}
+
+#header,
+nav{
+    display: grid;
+    height: 90px;
+}
+#header .logo a img{
+    width: 90px;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+.container-fluid img{
+    width: 70px;
+    margin: 10px;
+}
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.menu a{
+    text-decoration: none;
+    color: #FBFDED;
+}
+.menu a:hover,
+.offcanvas-body a:hover{
+    color: #ff6a4f;
+    border-bottom: 1px solid #ff6a4f;
+    padding-bottom: 5px;
+}
+nav.navbar,
+div.offcanvas,
+footer.footer-color{
+    background-color: #000f33 !important;
+}
+
+@media(min-width: 768px){
+    nav.navbar{
+        display: none;
+    }
+}
+@media(max-width: 768px){
+    #header{
+        display: none;
+    }
+} 
+
+#footer{
+    display: grid;
+    padding: 15px 0px;
+}
+#footer a{
+    border-radius: 50%;
+}
+#footer a:hover{
+    box-shadow:0px 0px 10px #fbfdedc7;
+}
+#footer .copy{
+    display: grid;
+    align-items: stretch;
+    justify-content: stretch
+}
+#footer .copy p{
+    color: #cdcacab8;
+    font-family: "Gotu Regular";
+    font-weight: 100;
+    font-size: 10px;
+    align-content: right;
+    margin-top: 20px;
+    margin-bottom: 2px;
+}
+#footer .redes-sociales{
+    display: inline-block;
+    margin: auto;
+}
+#footer .copy{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* HOME */
+
+
+
+/* PRODUCTOS */
+
+
+
+/* CONTACTO */
+
+
+
+/* ABOUT US */
+
+
+
+/* FAQs */
+
+

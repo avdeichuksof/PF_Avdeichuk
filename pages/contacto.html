@@ -25,13 +25,13 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link active" href="../index.html">Home</a>
+                            <a class="nav-link" href="../index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./productos.html">Productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                            <a class="nav-link active" href="./contacto.html">Contacto</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./nosotros.html">Nosotros</a>
@@ -59,8 +59,73 @@
             <a href="./faqs.html">FAQs</a>
         </nav>
 
-        <main class="main">
-            
+        <main class="mainContacto">
+            <div class="info">
+                <p>Tené en cuenta que si necesitas un cuadro para una fecha especial hay que encargarlo con tiempo.
+                Dependiendo de la dificultad del diseño puede tardar hasta un mes.
+                </p>
+                <p>Para diseños personalizados comentanos tu idea y, si tenés, adjunta imágenes.</p>
+            </div>
+
+            <div class="formulario">
+                <h3>Envianos tu consulta</h3>
+                <form>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group mb-2">
+                                <input type="text" class="form-control" placeholder="Nombre y Apellido" id="nombre" required>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group mb-2">
+                                <input type="email" class="form-control" placeholder="Ingrese su mail" id="mail" required>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="form-group mb-2">
+                                <input type="text"  class="form-control" id="tel" name="tel" placeholder="Ingrese un teléfono (opcional)">
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="form-group mb-2">
+                                <input type="date" class="form-control" id="fecha" name="fecha" placeholder="">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group mb-2">
+                                <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+                                    <select class="form-select" id="autoSizingSelect">
+                                        <option selected>Tamaño</option>
+                                        <option value="1">10x15cm</option>
+                                        <option value="2">20x30cm</option>
+                                        <option value="3">35x40cm</option>
+                                        <option value="3">30x50cm</option>
+                                        <option value="3">40x50cm</option>
+                                    </select>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group mb-2">
+                                <textarea class="form-control" id="comentario" cols="20" rows="6" required></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-12 input-group mb-2">
+                            <label class="input-group-text" for="inputGroupFile01">Upload</label>
+                            <input type="file" class="form-control" id="inputGroupFile01">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group text-center mt-2 mb-2">
+                                <button class="btn btn-outline-light col-8" type="submit">Enviar</button>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group text-center mt-2">
+                                <button class="btn btn-outline-light col-8" type="reset">Borrar todo</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </main>
 
         <footer id="footer" class="grid-footer">

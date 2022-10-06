@@ -1,21 +1,13 @@
+/* MI CSS */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 /* GLOBAL */
-@font-face{ 
-    font-family: "Gotu Regular"; 
-    src: url("../fonts/Gotu-Regular.ttf"); 
-}
-@font-face {
-    font-family: "Anie";
-    src: url(../fonts/AnnieUseYourTelescope-Regular.ttf);
-}
-
 body{
     background-color: #FBFDED;
-    font-family: "Gotu Regular";
 }
 
 .grid-area{
@@ -93,20 +85,6 @@ div.offcanvas{
     font-weight: 600;
 }
 
-@media(min-width: 768px){
-    nav.navbar{
-        display: none;
-    }
-}
-@media(max-width: 768px){
-    #header{
-        display: none;
-    }
-    html{
-        font-size: 70%;
-    }
-} 
-
 #footer{
     display: grid;
     padding: 15px 0px;
@@ -139,144 +117,4 @@ div.offcanvas{
 #footer .copy{
     display: flex;
     justify-content: center;
-}
-
-/* HOME */
-.intro{
-    margin: 20px 0px;
-    background-color: #d6621e;
-}
-.main h1{
-    color: #fbfdede3;
-    text-align: center;
-    font-family: "Anie";
-    font-size: 3rem;
-}
-.main h3{
-    margin-top: 30px;
-    padding: 10px;
-    background-color: #000f33;
-    color: #FBFDED;
-    text-align: center;
-    font-family: "Gotu Regular";
-    font-weight: 200;
-    font-size: 1.5rem;
-}
-.card-body p{
-    font-family: "Gotu Regular";
-}
-.btnVerMas{
-    float: right;
-    margin: 20px;
-}
-.cardCont{
-    transition: 0.5s;
-}
-div.cardCont:hover{
-    transform: scale(1.1);
-}
-
-/* PRODUCTOS */
-.prodCard{
-    transition: 0.5s;
-}
-div.prodCard:hover{
-    transform: scale(1.1);
-}
-
-/* CONTACTO */
-.mainContacto{
-    font-family: "Gotu Regular";
-    background-image: url(../img/zoomInDv.jpeg);
-    background-size: cover;
-    background-position:center;
-}
-.mainContacto .info{
-    background-color: #a65d03e0;
-    color: #d4d6d7;
-    font-size: 1rem;
-    width: 40%;
-    height: auto;
-    text-align: center;
-    padding: 10px;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    border-radius: 15px;
-}
-.mainContacto .formulario{
-    margin: 10px;
-    background-color: #a65d03e0;
-    color: #d4d6d7;
-    font-size: 0.5rem;
-    width: 60%;
-    height: auto;
-    padding: 10px;
-    border-radius: 10px;
-    margin: auto;
-    margin-bottom: 15px;
-}
-.formulario h3{
-    color: #d4d6d7;
-    text-align: center;
-    font-weight: 600;
-}
-
-/* ABOUT US */
-.texto p{
-    font-family: "Anie";
-    display: inline-block;
-    width: 100%;
-    height: auto;
-    padding: 20px;
-    font-size: 1rem;
-    text-align: center;
-    font-weight: 700;
-    background-color: #d6611e;
-    margin: 20px 0;
-}
-.imagenes h3{
-    font-variant: small-caps;
-    background-color: #732103b7;
-    color: #FBFDED;
-    width: 100%;
-    margin: 10px 0px;
-    text-align: center;
-}
-.imagenes img{
-    display: flex;
-    
-    width: 40%;
-    height: auto;
-    margin: 10px 25px;
-}
-
-
-/* FAQs */
-.mainFaqs{
-    background: linear-gradient(#00206c, #ba4e0f);
-}
-.main .title{
-    text-align: center;
-    font-family: "Anie";
-    font-weight: 600;
-    font-size: 3rem;
-    color: #d4d6d7;
-}
-.main p,
-.main h2{
-    font-family: "Gotu Regular";
-    font-size: 1rem;
-}
-.main .accordion{
-    width: 80%;
-    margin: auto;
-}
-.main .accordion-button{
-    font-weight: 600;
-}
-@media(min-width: 768px){
-    .main .accordion{
-        margin-bottom: 40px;
-    }
 }

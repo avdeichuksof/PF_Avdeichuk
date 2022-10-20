@@ -8,12 +8,11 @@
     <meta name="description" content="Si tenés una idea en mente contactanos, ¡y lo convertimos en una bonita obra de arte!">
     <meta name="keywords" content="cuadros, arte, pintura, decoración">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../sass/main.css">
     <script src="https://kit.fontawesome.com/029b757842.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
-<body>
+<body class="bodyContacto">
     <nav class="navbar navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="../index.html"><img class="logoNav" src="../img/logo.png" alt="logo"></a>
@@ -62,73 +61,34 @@
             <a href="./faqs.html">FAQs</a>
         </nav>
 
-        <main class="mainContacto">
-            <div class="info">
-                <p>Tené en cuenta que si necesitas un cuadro para una fecha especial hay que encargarlo con tiempo.
-                Dependiendo de la dificultad del diseño puede tardar hasta un mes.
-                </p>
-                <p>Para diseños personalizados comentanos tu idea y, si tenés, adjunta imágenes.</p>
-            </div>
-
-            <div class="formulario">
-                <h3>Envianos tu consulta</h3>
-                <form>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="form-group mb-2">
-                                <input type="text" class="form-control" placeholder="Nombre y Apellido" id="nombre" required>
+        <main class="mainContact">
+                <section class="contact">
+                    <div class="contact__container">
+                        <h1 class="contact__title">Contactanos</h1>
+                        <div class="importantInfo">
+                            <p class="contact__image"><i class="fa-solid fa-circle-exclamation"></i> Tené en cuenta que si necesitas un cuadro para una fecha especial hay que encargarlo con tiempo.
+                            Dependiendo de la dificultad del diseño puede tardar hasta un mes.
+                            Para diseños personalizados comentanos tu idea y, si tenés, adjunta imágenes.
+                            </p>
+                        </div>
+                        <form class="contact__form-wrapper">
+                            <div class="contact__input-line">
+                                <input type="text" name="name" id="name" class="contact__input" placeholder="Ingrese su nombre" required>
                             </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="form-group mb-2">
-                                <input type="email" class="form-control" placeholder="Ingrese su mail" id="mail" required>
+                            <div class="contact__input-line">
+                                <input type="email" email="email" id="email" class="contact__input" placeholder="Ingrese su mail" required>
                             </div>
-                        </div>
-                        <div class="col-md-7">
-                            <div class="form-group mb-2">
-                                <input type="text"  class="form-control" id="tel" name="tel" placeholder="Ingrese un teléfono (opcional)">
+                            <div class="contact__input-line">
+                                <textarea name="message" id="message" class="contact__input-textarea" placeholder="Escriba el mensaje" required></textarea>
                             </div>
-                        </div>
-                        <div class="col-md-5">
-                            <div class="form-group mb-2">
-                                <input type="date" class="form-control" id="fecha" name="fecha" placeholder="">
+                            <div class="contact__input-line">
+                                <input type="file" id="file">
                             </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="form-group mb-2">
-                                <label class="visually-hidden" for="autoSizingSelect">Preference</label>
-                                    <select class="form-select" id="autoSizingSelect">
-                                        <option selected>Tamaño</option>
-                                        <option value="1">10x15cm</option>
-                                        <option value="2">20x30cm</option>
-                                        <option value="3">35x40cm</option>
-                                        <option value="3">30x50cm</option>
-                                        <option value="3">40x50cm</option>
-                                    </select>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="form-group mb-2">
-                                <textarea class="form-control" id="comentario" cols="20" rows="6" required></textarea>
-                            </div>
-                        </div>
-                        <div class="col-md-12 input-group mb-2">
-                            <label class="input-group-text" for="inputGroupFile01">Upload</label>
-                            <input type="file" class="form-control" id="inputGroupFile01">
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group text-center mt-2 mb-2">
-                                <button class="btn btn-outline-light col-8" type="submit">Enviar</button>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group text-center mt-2">
-                                <button class="btn btn-outline-light col-8" type="reset">Borrar todo</button>
-                            </div>
-                        </div>
+                            <input type="submit" value="Enviar" class="contact__submit-btn">
+                        </form>
+                        
                     </div>
-                </form>
-            </div>
+                </section>
         </main>
 
         <footer id="footer" class="grid-footer">

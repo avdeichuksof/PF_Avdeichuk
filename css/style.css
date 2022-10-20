@@ -1,11 +1,19 @@
-/* MI CSS */
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 /* GLOBAL */
+@font-face {
+    font-family: "Gotu Regular";
+    src: url(../fonts/Gotu-Regular.ttf);
+}
+@font-face {
+    font-family: "Anie";
+    src: url(../fonts/AnnieUseYourTelescope-Regular.ttf);
+}
+
 body{
     background-color: #FBFDED;
 }
@@ -117,4 +125,215 @@ div.offcanvas{
 #footer .copy{
     display: flex;
     justify-content: center;
+}
+
+/* HOME */
+.intro{
+    margin: 20px 0px;
+    background-color: #d6621e;
+}
+.main h1{
+    color: #fbfdede3;
+    text-align: center;
+    font-family: "Anie";
+    font-size: 3rem;
+}
+.main h3{
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #000f33;
+    color: #FBFDED;
+    text-align: center;
+    font-family: "Gotu Regular";
+    font-weight: 200;
+    font-size: 1.5rem;
+}
+.card-body p{
+    font-family: "Gotu Regular";
+}
+.btnVerMas{
+    float: right;
+    margin: 20px;
+}
+.cardCont{
+    transition: 0.5s;
+}
+div.cardCont:hover{
+    transform: scale(1.1);
+}
+
+
+/* PRODUCTOS */
+.prodCard{
+    transition: 0.5s;
+}
+div.prodCard:hover{
+    transform: scale(1.1);
+}
+
+/* EJEMPLO DE CARRITO */
+.producto img{
+    width: 40%;
+    height: auto;
+    display: inline-block;
+}
+.buyForm{
+    display: inline-block;
+}
+
+/* CONTACTO */
+.mainContact{
+    background-image: url(../img/zoomInDv.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contact{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ba4e0f63;
+    margin: 15px auto;
+}
+.contact__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 7.3% 0 4.7%;
+}
+.contact__title{
+    font-size: 2rem;
+    font-family: "Gotu Regular";
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.contact__form-wrapper,
+.contact__input-line{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+}
+.contact__input-line{
+    margin-bottom: 20px;
+}
+.contact__input{
+    height: 30px;
+    outline: none;
+    padding: 5px 0;
+    width: 100%;
+    color: #ffffff;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1.5px solid white;
+}
+
+.contact__input-textarea{
+    height: 100px;
+    outline: none;
+    padding: 5px 0;
+    width: 100%;
+    color: #ffffff;
+    background-color: transparent;
+    resize: none;
+    border: none;
+    border-bottom: 1.5px solid white;
+}
+.contact__input-textarea:focus,
+.contact__input:focus{
+    background: #44444483;
+    border-radius: 8px;
+    padding: 5px;
+}
+.contact__input-textarea::placeholder,
+.contact__input::placeholder{
+    color: white;
+}
+.contact__submit-btn{
+    padding: 15px 20px;
+    background-color: #000f33;
+    border-radius: 25px;
+    color: #ffffff;
+    font-weight: 600;
+    border: none;
+    font-size: 12px;
+    cursor: pointer;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.contact__submit-btn:hover{
+    background-color: #092056
+}
+.importantInfo{
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 12px;
+    background-color: #434343af;
+    border-radius: 10px;
+}
+
+
+/* ABOUT US */
+.texto p{
+    font-family: "Anie";
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 700;
+    background-color: #d6611e;
+    margin: 20px 0;
+}
+
+/* FAQs */
+.mainFaqs{
+    background: linear-gradient(#e43d00, #002d96);
+}
+.main .title{
+    text-align: center;
+    font-family: "Anie";
+    font-weight: 600;
+    font-size: 3rem;
+    color: #FBFDED;
+}
+.main p,
+.main h2{
+    font-family: "Gotu Regular";
+    font-size: 1rem;
+}
+.main .accordion{
+    width: 80%;
+    margin: auto;
+}
+.main .accordion-button{
+    font-weight: 600;
+}
+@media(min-width: 768px){
+    .main .accordion{
+        margin-bottom: 40px;
+    }
+}
+
+@media(min-width: 768px){
+    nav.navbar{
+        display: none;
+        }
+}
+@media(max-width: 768px){
+    html{
+        font-size: 70%;
+    }
+    #header{
+        display: none;
+    }
 }
